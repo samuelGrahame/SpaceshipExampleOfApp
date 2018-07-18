@@ -1,0 +1,94 @@
+﻿:root {
+    --first: rgb(147, 14, 255);
+    --second: rgb(252, 252, 252);
+    --third: rgb(227, 226, 233);
+    --forth: rgb(148, 143, 168);
+    --fifth: rgb(18, 0, 59);
+    --sixth: rgb(206, 204, 215);
+    --seventh: rgb(196, 78, 255);
+}
+
+.nav-button {    
+    transition: color ease-in-out 0.1s;
+    transition: background-color ease-in-out 0.1s;
+    border: 0;
+    background-color: var(--second);
+    color: var(--forth);
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.nav-button.active {
+    background-color: var(--sixth);
+    color: var(--first);    
+}
+
+.nav-button:hover:not(.active) {
+    background-color: var(--third);
+    color: var(--first);    
+}
+
+.nav-button:focus {
+    outline: 0;
+}
+
+.nar-bar {
+    position: absolute;
+    width: 100%;
+    height: 11.25%;
+    top: calc(100% - 11.25%);
+    left: 0;
+    background-color: var(--second);
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    background-color: var(--fifth);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+}
+
+.display-port {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.news-top-panel {
+    position: absolute;
+    width: calc(100% - 10%);
+    height: calc(43.75% - 20%);
+    top: 5%;
+    left: 5%;
+}
+
+.balance-heading {
+    color: rgb(169, 171, 187);
+    font-size: 22px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.balance-amount {
+    color: var(--second);
+    font-size: 67px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.balance-percent-change {
+    color: var(--seventh);
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+small {
+    font-size: 25px;
+}
